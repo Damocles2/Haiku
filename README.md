@@ -23,20 +23,19 @@ Haiku is designed following the KISS (Keep It Simple, Stupid) principle, emphasi
 # Getting Started
 To get started with Haiku, follow these simple steps:
 
-Download the Python Script: Clone or download the Haiku Python script from the GitHub repository.
-Install Dependencies: Haiku has very few dependencies, making it easy to set up. Ensure you have Python installed on your system.
-Run the Script: Execute the Python script on your local machine to launch Haiku.
-Start Chatting: Once Haiku is running, you can start chatting with the conversational chatbot.
-Usage
-Haiku is designed for ease of use. Simply launch the application, and you're ready to start chatting. Use the keyboard shortcuts provided to navigate the interface efficiently. Haiku is capable of engaging in various conversations, from casual chats to more profound discussions.
+Download the Python Script: Clone or download the script and icon from the GitHub repository.
+
+Install Dependencies: Ensure you have Python and pip installed on your system. Make sure to do pip install customtkinter, pytorch, transformers
+
+Run the Script: Execute the Python script on your local machine to launch Haiku. On the first launch, it will download the model before starting the interface. If it complains about something being unavailable, simply install it with pip and retry.
+
+Start Chatting: Once Haiku is running, you are free to start using it, regardless of wheter you have an internet connection or not
 
 # Contributing
-Haiku adheres to the KISS principle and welcomes contributions from the community. If you have ideas for improving the app, feel free to submit pull requests or open issues on the GitHub repository.
+Although i intend to keep Haiku relatively simple, i welcome contributions from the community. If you have ideas for improving the app, feel free to submit pull requests or open issues on the GitHub repository.
 
 # License
 Haiku is licensed under the GNU General Public License v3.0. You are free to use, modify, and distribute the software as per the terms of the license.
 
 # Contact
-For any inquiries or feedback regarding Haiku, please contact author@example.com.
-
-Thank you for choosing Haiku! We hope you enjoy your conversational experience with our minimalist chatbot app.
+For any inquiries or feedback regarding Haiku, please contact u/mentaldegeneration

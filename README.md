@@ -20,12 +20,14 @@ Haiku is designed following the KISS (Keep It Simple, Stupid) principle, emphasi
 
 **Versatile**: Haiku is based on an awq quant of zephyr-7b-beta, which enables it to excel in various tasks such as writing stories, answering questions, and more. It serves as your very own chat GPT, offering functionality beyond mere roleplay.
 
+![Untitled](https://github.com/Damocles2/Haiku/assets/69592035/03d26642-0565-42c6-b1a0-cfba6177ac7c)
+
 # Getting Started
 To get started with Haiku, follow these simple steps:
 
 Download the Python Script: Clone or download the script and icon from the GitHub repository.
 
-Install Dependencies: Ensure you have Python and pip installed on your system. Make sure to do pip install customtkinter, pytorch, transformers
+Install Dependencies: Ensure you have Python and pip installed on your system. Make sure to do pip install customtkinter, pytorch, transformers. Also make sure you have the noto sans regular font installed by double clicking it and clicking "install" in the top left of the resulting window.
 
 Run the Script: Execute the Python script on your local machine to launch Haiku. On the first launch, it will download the model before starting the interface. If it complains about something being unavailable, simply install it with pip and retry.
 

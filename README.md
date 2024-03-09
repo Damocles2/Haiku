@@ -1,7 +1,7 @@
 
 ![haikubanner](https://github.com/Damocles2/Haiku/assets/69592035/8de6f259-3611-4b31-ac54-f32b499a5ce7)
 
-# Haiku - Minimalist Locally Hosted Conversational Chatbot App
+# Haiku - Minimalist offline personal assistant
 Haiku is a minimalist personal assistant based off of the transformers/pytorch pipeline, intended to provide a viable alternative to ChatGPT that can be run in the background on modest hardware.
 Haiku is designed following the KISS (Keep It Simple, Stupid) principle, emphasizing simplicity, efficiency, and versatility. It is written in a single easy-to-understand Python script with only 99 lines of code and very few dependencies. With its minimalistic design and modern interface, Haiku provides a seamless and foolproof user experience.
 

@@ -85,13 +85,13 @@ class App(customtkinter.CTk):
 
         # create textbox
         self.textbox = customtkinter.CTkTextbox(self)
-        self.textbox.grid(row=0, column=0, padx=(20, 20), pady=(20, 0), sticky="nsew", columnspan=3, state="disabled")
+        self.textbox.grid(row=0, column=0, padx=(20, 20), pady=(20, 0), sticky="nsew", columnspan=3)
 
         self.textbox.configure(font=("Noto Sans", 14, "bold"), wrap="word")
+        self.textbox.configure(state="disabled")
         self.entry.bind("<Return>", lambda event: buttonpress_event(self.entry, self.textbox, messages))
         self.bind_all("<Control-d>", lambda event: clear_messages(self.entry, self.textbox, messages))
         self.iconbitmap("opt.ico")
-
 
 
 if __name__ == "__main__":

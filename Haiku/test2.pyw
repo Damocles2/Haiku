@@ -49,7 +49,7 @@ def buttonpress_event(entry, textbox,messages):
     
     messages.append(userprompt.copy())
     prompt = pipe.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-    outputs = pipe(prompt, max_new_tokens=1024, do_sample=True, temperature=0.7, top_k=50, top_p=0.95)
+    outputs = pipe(prompt, max_new_tokens=2048, do_sample=True, temperature=0.5, top_k=50, top_p=0.95)
     response_text = delete_before_last_instance(outputs[0]["generated_text"], "<|assistant|>")
     el_cum += ("Assistant:" + (delete_before_last_instance(outputs[0]["generated_text"], "<|assistant|>")) + "\n\n")
 
@@ -85,7 +85,7 @@ class App(customtkinter.CTk):
 
         # create textbox
         self.textbox = customtkinter.CTkTextbox(self)
-        self.textbox.grid(row=0, column=0, padx=(20, 20), pady=(20, 0), sticky="nsew", columnspan=3)
+        self.textbox.grid(row=0, column=0, padx=(20, 20), pady=(20, 0), sticky="nsew", columnspan=3, state="disabled")
 
         self.textbox.configure(font=("Noto Sans", 14, "bold"), wrap="word")
         self.entry.bind("<Return>", lambda event: buttonpress_event(self.entry, self.textbox, messages))
@@ -97,5 +97,3 @@ class App(customtkinter.CTk):
 if __name__ == "__main__":
     app = App()
     app.mainloop()
-
-
